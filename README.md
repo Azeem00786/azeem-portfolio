@@ -42,6 +42,21 @@ To add a project, append to the `projects` array:
 The résumé PDF is served from `public/AzeemResume.pdf` — replace that file to update
 the download link.
 
+## Turning on "Book a 15-min call"
+
+The booking buttons (nav, hero and contact) currently open a pre-filled booking email.
+To make them open a real scheduler:
+
+1. Create a free account at [cal.com](https://cal.com) (recommended) or
+   [calendly.com](https://calendly.com).
+2. Create an event type: **15 minutes**, and set your availability to cover the hours
+   you want bookable.
+3. Copy the public booking link — it looks like `https://cal.com/your-name/15min`.
+4. Paste it into `booking:` in `src/content.ts`, then commit and push.
+
+Once `booking` is non-empty the buttons switch to the scheduler automatically and open
+in a new tab. Leave it empty and they keep falling back to email, so nothing breaks.
+
 ## Deploying to GitHub Pages
 
 The workflow in `.github/workflows/deploy.yml` builds and deploys on every push to

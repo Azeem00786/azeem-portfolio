@@ -11,6 +11,16 @@ export const profile = {
   available: true,
   availabilityNote: 'Open to contract & project work',
   email: 'azeemmohammad377@gmail.com',
+  phone: '+91 85738 67986',
+  phoneHref: 'tel:+918573867986',
+  whatsapp: 'https://wa.me/918573867986',
+  /**
+   * Paste your Cal.com or Calendly link here (see README) to make the
+   * "Book a 15-min call" buttons open a real scheduler.
+   * While this is empty they fall back to a pre-filled booking email, so the
+   * buttons always work.
+   */
+  booking: '',
   github: 'https://github.com/Azeem00786',
   githubHandle: 'Azeem00786',
   linkedin: 'https://www.linkedin.com/in/mohammad-azeem-69b056217',
@@ -20,6 +30,21 @@ export const profile = {
     'I build complete products — Next.js web platforms with the admin panels that run them, and React Native apps for iOS and Android. Four years shipping inside a multi-tenant SaaS company means I hand over work that is documented, deployable and maintainable, not a demo that breaks the week after launch.',
   since: 2021,
 }
+
+/**
+ * Where "Book a 15-min call" points. Uses the real scheduler once
+ * `profile.booking` is set; until then it opens a pre-filled booking email so
+ * the button is never a dead end.
+ */
+export const bookingHref =
+  profile.booking ||
+  `mailto:${profile.email}?subject=${encodeURIComponent(
+    'Book a 15-minute call',
+  )}&body=${encodeURIComponent(
+    "Hi Azeem,\n\nI'd like to book a 15-minute call.\n\nWhat I need help with:\nPreferred day/time (with your timezone):\n\n",
+  )}`
+
+export const bookingIsScheduler = Boolean(profile.booking)
 
 export const stats = [
   { value: '4+', label: 'Years shipping' },

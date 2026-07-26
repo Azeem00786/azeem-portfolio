@@ -1,4 +1,4 @@
-import { profile } from '../content'
+import { bookingHref, bookingIsScheduler, profile } from '../content'
 import { useCopy, useReveal } from '../hooks'
 import SectionHead from './SectionHead'
 
@@ -28,8 +28,27 @@ export default function Contact() {
             {profile.email}
           </a>
 
+          <a className="contact__phone" href={profile.phoneHref}>
+            {profile.phone}
+          </a>
+
           <div className="contact__actions">
-            <button className="btn btn--primary" onClick={() => copy(profile.email)}>
+            <a
+              className="btn btn--primary"
+              href={bookingHref}
+              {...(bookingIsScheduler ? { target: '_blank', rel: 'noreferrer noopener' } : {})}
+            >
+              Book a 15-min call →
+            </a>
+            <a
+              className="btn"
+              href={profile.whatsapp}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              WhatsApp ↗
+            </a>
+            <button className="btn" onClick={() => copy(profile.email)}>
               {copied ? 'Copied ✓' : 'Copy email'}
             </button>
             <a className="btn" href={profile.linkedin} target="_blank" rel="noreferrer noopener">
@@ -55,6 +74,10 @@ export default function Contact() {
             <li>
               <span className="mono-tag">status</span>
               {profile.availabilityNote}
+            </li>
+            <li>
+              <span className="mono-tag">calls</span>
+              15-minute intro call, any hour that suits your timezone
             </li>
           </ul>
         </div>

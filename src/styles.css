@@ -231,6 +231,11 @@ ol {
   filter: brightness(1.1);
 }
 
+.btn--sm {
+  padding: 8px 14px;
+  font-size: 12px;
+}
+
 .btn--ghost {
   border-color: transparent;
   color: var(--muted);
@@ -384,6 +389,17 @@ ol {
 
 .nav__burger {
   display: none;
+}
+
+/* The booking CTA stays visible at every width — it's the primary conversion. */
+.nav__book {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .nav__book {
+    display: none;
+  }
 }
 
 @media (max-width: 860px) {
@@ -992,7 +1008,9 @@ ol {
 }
 
 .contact__mail {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
   font-family: var(--font-mono);
   font-size: clamp(19px, 4.2vw, 42px);
   font-weight: 500;
@@ -1006,12 +1024,27 @@ ol {
     background-size 0.45s var(--ease),
     color 0.25s var(--ease);
   padding-bottom: 4px;
-  margin-bottom: 34px;
+  margin-bottom: 12px;
 }
 
 .contact__mail:hover {
   color: var(--accent);
   background-size: 100% 1px;
+}
+
+.contact__phone {
+  display: block;
+  width: fit-content;
+  font-family: var(--font-mono);
+  font-size: clamp(17px, 2.6vw, 26px);
+  letter-spacing: -0.02em;
+  color: var(--fg-dim);
+  margin-bottom: 34px;
+  transition: color 0.25s var(--ease);
+}
+
+.contact__phone:hover {
+  color: var(--accent);
 }
 
 .contact__actions {
