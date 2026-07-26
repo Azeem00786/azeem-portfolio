@@ -96,20 +96,19 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'doctor-saas',
+    id: 'doctor-app',
     index: '04',
-    title: 'Doctor Appointment SaaS',
-    kind: 'Multi-tenant booking platform',
+    title: 'Doctor Appointment App',
+    kind: 'Booking & scheduling',
     year: 'Production',
     summary:
-      'A SaaS platform for clinics and practitioners — appointment booking and practice management, built on a microservices backend rather than a single monolith.',
+      'An appointment booking app connecting patients with doctors — scheduling, availability and appointment management, served by a microservices backend.',
     detail: [
-      'Microservices architecture: independently deployable services talking over APIs, so parts of the system can scale — and fail — without taking the rest down.',
-      'Multi-tenant by design — each clinic runs isolated data and its own configuration on shared infrastructure.',
-      'Appointment booking and scheduling for patients, with practice-side management tools behind it.',
-      'Service boundaries, data ownership and API contracts designed up front, not retrofitted.',
+      'Patient-side booking: find a doctor, see real availability, book and manage appointments.',
+      'Doctor-side schedule and appointment management.',
+      'Microservices backend — separate services behind APIs rather than one monolith, so scheduling and user management scale independently.',
     ],
-    stack: ['Microservices', 'System design', 'REST APIs', 'Multi-tenant'],
+    stack: ['Microservices', 'System design', 'REST APIs'],
     note: 'Client product — architecture walkthrough on request',
   },
   {
