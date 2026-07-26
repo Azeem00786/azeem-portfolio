@@ -121,8 +121,25 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'doctor-app',
+    id: 'microservices',
     index: '04',
+    title: 'Laravel Microservices',
+    kind: 'Backend platform services',
+    year: 'Production',
+    summary:
+      'A set of independent Laravel services the wider product runs on — deployment, logging, printing and notifications — each owning its job and deployable on its own.',
+    detail: [
+      'Deployment service: the whole app deployment process automated down to one click, replacing a manual multi-step release.',
+      'Logging service: centralised log ingestion and search built on Redis, a message queue and MongoDB — writes stay fast under load, history stays queryable.',
+      'Printer service: cloud and thermal printer management across hardware types, with dynamic receipt generation.',
+      'Notification service: a single dispatch point for notifications across the platform.',
+    ],
+    stack: ['Laravel', 'PHP', 'Redis', 'MongoDB', 'Message queues', 'Microservices'],
+    note: 'Internal platform services',
+  },
+  {
+    id: 'doctor-app',
+    index: '05',
     title: 'Doctor Appointment App',
     kind: 'Booking & scheduling',
     year: 'Production',
@@ -138,7 +155,7 @@ export const projects: Project[] = [
   },
   {
     id: 'whitelabel',
-    index: '05',
+    index: '06',
     title: 'White-labeled SaaS Mobile App',
     kind: 'Multi-tenant framework',
     year: '2023 — Present',
@@ -157,7 +174,7 @@ export const projects: Project[] = [
   },
   {
     id: 'cicd',
-    index: '06',
+    index: '07',
     title: 'CI/CD Automation Pipeline',
     kind: 'Release engineering',
     year: '2023 — Present',
@@ -172,7 +189,7 @@ export const projects: Project[] = [
   },
   {
     id: 'quiz',
-    index: '07',
+    index: '08',
     title: 'English Quiz App',
     kind: 'Consumer mobile app',
     year: 'Shipped',
@@ -205,9 +222,9 @@ export const services = [
     tags: ['React Native', 'iOS', 'Android', 'Native modules'],
   },
   {
-    title: 'System design & architecture',
-    body: 'Microservices, multi-tenant data models and API contracts designed before the first line of code. A website, an admin panel and mobile apps sharing one backend and one source of truth — most freelancers do one piece; I design the system so the pieces agree.',
-    tags: ['System design', 'Microservices', 'API design', 'Multi-tenant'],
+    title: 'System design & microservices',
+    body: 'Backend services split by responsibility — deployment, logging, notifications, printing — built in Laravel and Node with Redis, queues and MongoDB behind them. A website, an admin panel and mobile apps sharing one backend and one source of truth.',
+    tags: ['System design', 'Microservices', 'Laravel', 'Redis', 'Queues'],
   },
   {
     title: 'White-label & multi-tenant delivery',
@@ -223,7 +240,7 @@ export const services = [
 
 export const skills = [
   { group: 'Frontend', items: ['Next.js', 'React', 'Vue.js', 'JavaScript', 'HTML / CSS', 'Responsive UI'] },
-  { group: 'Backend & data', items: ['Node.js', 'REST APIs', 'Microservices', 'System design', 'PostgreSQL', 'SQL', 'PHP', 'Laravel', 'Firebase'] },
+  { group: 'Backend & data', items: ['Node.js', 'Laravel', 'PHP', 'REST APIs', 'Microservices', 'System design', 'PostgreSQL', 'MongoDB', 'Redis', 'Message queues', 'SQL', 'Firebase'] },
   { group: 'Mobile', items: ['React Native', 'Swift', 'Java', 'Native modules', 'Push notifications', 'Deep linking', 'Live Activities', 'AR', 'Geolocation'] },
   { group: 'DevOps & hosting', items: ['GitHub Actions', 'Fastlane', 'Codemagic', 'Jenkins', 'YAML', 'Cloudflare', 'Google Cloud Platform'] },
   { group: 'Tools', items: ['Git', 'VS Code', 'Xcode', 'Android Studio'] },
