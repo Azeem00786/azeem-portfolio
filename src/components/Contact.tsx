@@ -1,9 +1,8 @@
 import { bookingHref, bookingIsScheduler, profile } from '../content'
-import { useCopy, useReveal } from '../hooks'
+import { useReveal } from '../hooks'
 import SectionHead from './SectionHead'
 
 export default function Contact() {
-  const { copied, copy } = useCopy()
   const ref = useReveal<HTMLDivElement>()
 
   const subject = encodeURIComponent('Project enquiry')
@@ -40,17 +39,6 @@ export default function Contact() {
             >
               Book a call →
             </a>
-            <a
-              className="btn"
-              href={profile.whatsapp}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              WhatsApp ↗
-            </a>
-            <button className="btn" onClick={() => copy(profile.email)}>
-              {copied ? 'Copied ✓' : 'Copy email'}
-            </button>
             <a className="btn" href={profile.linkedin} target="_blank" rel="noreferrer noopener">
               LinkedIn ↗
             </a>

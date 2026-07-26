@@ -47,7 +47,7 @@ export const bookingHref =
 export const bookingIsScheduler = Boolean(profile.booking)
 
 export const stats = [
-  { value: '4+', label: 'Years shipping' },
+  { value: '5+', label: 'Years shipping' },
   { value: 'Web + App', label: 'End-to-end delivery' },
   { value: '90%', label: 'Less manual release time' },
   { value: 'Multi', label: 'Tenant SaaS at scale' },
