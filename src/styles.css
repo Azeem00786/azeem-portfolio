@@ -231,11 +231,6 @@ ol {
   filter: brightness(1.1);
 }
 
-.btn--sm {
-  padding: 8px 14px;
-  font-size: 12px;
-}
-
 .btn--ghost {
   border-color: transparent;
   color: var(--muted);
@@ -389,17 +384,6 @@ ol {
 
 .nav__burger {
   display: none;
-}
-
-/* The booking CTA stays visible at every width — it's the primary conversion. */
-.nav__book {
-  white-space: nowrap;
-}
-
-@media (max-width: 520px) {
-  .nav__book {
-    display: none;
-  }
 }
 
 @media (max-width: 860px) {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { bookingHref, bookingIsScheduler, profile, sections } from '../content'
+import { profile, sections } from '../content'
 import { useActiveSection, useTheme } from '../hooks'
 
 const ids = sections.map((s) => s.id)
@@ -40,13 +40,6 @@ export default function Nav() {
         </nav>
 
         <div className="nav__actions">
-          <a
-            className="btn btn--primary btn--sm nav__book"
-            href={bookingHref}
-            {...(bookingIsScheduler ? { target: '_blank', rel: 'noreferrer noopener' } : {})}
-          >
-            Book a call
-          </a>
           <button
             className="icon-btn"
             onClick={toggle}

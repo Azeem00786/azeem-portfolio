@@ -32,7 +32,7 @@ export default function Hero() {
             href={bookingHref}
             {...(bookingIsScheduler ? { target: '_blank', rel: 'noreferrer noopener' } : {})}
           >
-            Book a 15-min call →
+            Book a call →
           </a>
           <a className="btn" href="#work">
             See the work
