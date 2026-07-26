@@ -56,7 +56,7 @@ export const projects: Project[] = [
       'Admin panel for the operations team — create and price packages, manage bookings, publish content and handle incoming enquiries.',
       'Built for a non-technical team to run daily without touching code.',
     ],
-    stack: ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'Responsive UI'],
+    stack: ['Next.js', 'React', 'Node.js', 'REST APIs', 'Admin panel'],
     link: { href: 'https://www.nahidgroup.in/', label: 'nahidgroup.in' },
     featured: true,
   },
@@ -73,7 +73,7 @@ export const projects: Project[] = [
       'Admin panel controlling curriculum, media and learner-facing pages.',
       'Public site tuned for enrolment — fast pages, clear funnels, mobile-first.',
     ],
-    stack: ['PHP', 'Laravel', 'MySQL', 'REST APIs', 'Admin CMS'],
+    stack: ['Next.js', 'React', 'Node.js', 'REST APIs', 'Admin CMS'],
     link: { href: 'https://www.powerofailearning.in/', label: 'powerofailearning.in' },
     featured: true,
   },
@@ -161,7 +161,7 @@ export const services = [
   {
     title: 'Web platforms with admin panels',
     body: 'Dynamic websites backed by a control panel your team actually runs — content, catalogues, bookings and enquiries editable without a developer.',
-    tags: ['Laravel', 'PHP', 'PostgreSQL', 'MySQL'],
+    tags: ['Next.js', 'React', 'Node.js', 'PostgreSQL'],
   },
   {
     title: 'White-label & multi-tenant delivery',
@@ -182,7 +182,7 @@ export const services = [
 
 export const skills = [
   { group: 'Languages', items: ['JavaScript', 'Java', 'Swift', 'PHP', 'SQL / PostgreSQL', 'HTML / CSS'] },
-  { group: 'Frameworks', items: ['React Native', 'React', 'Node.js', 'Laravel'] },
+  { group: 'Frameworks', items: ['React Native', 'React', 'Next.js', 'Node.js', 'Laravel'] },
   { group: 'Automation & CI/CD', items: ['Fastlane', 'GitHub Actions', 'Codemagic', 'Jenkins', 'YAML'] },
   { group: 'Platform & tools', items: ['Git', 'Google Cloud Platform', 'Firebase', 'Xcode', 'Android Studio', 'VS Code'] },
   { group: 'Mobile capabilities', items: ['Native modules', 'Push notifications', 'Deep linking', 'Live Activities', 'AR', 'Geolocation', 'Printer SDKs'] },
