@@ -21,7 +21,11 @@ export default function Stack() {
   return (
     <section className="section" id="stack">
       <div className="wrap">
-        <SectionHead num="03" title="Stack" blurb="Tools I reach for, grouped by what they're for." />
+        <SectionHead
+          num="03"
+          title="Stack"
+          blurb="Front end through deployment — the full path, not one slice of it."
+        />
         <div className="stack">
           {skills.map((s) => (
             <Group key={s.group} group={s.group} items={s.items} />

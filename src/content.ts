@@ -5,7 +5,7 @@
 
 export const profile = {
   name: 'Mohammad Azeem',
-  role: 'React Native Developer & Mobility DevOps',
+  role: 'Full-Stack Developer — Web & Mobile',
   location: 'Lucknow, India',
   timezone: 'IST · UTC+5:30',
   available: true,
@@ -17,15 +17,15 @@ export const profile = {
   linkedinHandle: 'mohammad-azeem',
   resume: 'AzeemResume.pdf',
   intro:
-    'I build cross-platform mobile apps and the release pipelines that ship them. Four years inside a multi-tenant SaaS product — writing native modules when React Native runs out of road, automating App Store and Play Store releases, and taking features from a sales call to production.',
+    'I build complete products — Next.js web platforms with the admin panels that run them, and React Native apps for iOS and Android. Four years shipping inside a multi-tenant SaaS company means I hand over work that is documented, deployable and maintainable, not a demo that breaks the week after launch.',
   since: 2021,
 }
 
 export const stats = [
   { value: '4+', label: 'Years shipping' },
-  { value: '2', label: 'App stores, automated' },
+  { value: 'Web + App', label: 'End-to-end delivery' },
   { value: '90%', label: 'Less manual release time' },
-  { value: 'Multi', label: 'Tenant white-label SaaS' },
+  { value: 'Multi', label: 'Tenant SaaS at scale' },
 ]
 
 export type Project = {
@@ -149,43 +149,43 @@ export const projects: Project[] = [
 
 export const services = [
   {
+    title: 'Full-stack web development',
+    body: 'Next.js and React front ends on a Node backend — marketing sites, booking platforms, learning portals and dashboards. Designed, built, deployed and handed over working.',
+    tags: ['Next.js', 'React', 'Node.js', 'REST APIs'],
+  },
+  {
+    title: 'Admin panels & CMS',
+    body: 'The control room behind the website: your team edits content, prices, catalogues, bookings and enquiries themselves. No developer on retainer for a text change.',
+    tags: ['Admin panel', 'CMS', 'Dashboards', 'PostgreSQL'],
+  },
+  {
     title: 'Cross-platform mobile apps',
     body: 'React Native apps for iOS and Android from one codebase — built to be maintained, not just launched. Native modules in Java and Swift when the platform demands it.',
     tags: ['React Native', 'iOS', 'Android', 'Native modules'],
   },
   {
-    title: 'Release automation & DevOps',
-    body: 'Fastlane, GitHub Actions and Codemagic pipelines that build, sign and publish to both stores. Store submission stops being a person and becomes a process.',
-    tags: ['Fastlane', 'GitHub Actions', 'Codemagic', 'CI/CD'],
-  },
-  {
-    title: 'Web platforms with admin panels',
-    body: 'Dynamic websites backed by a control panel your team actually runs — content, catalogues, bookings and enquiries editable without a developer.',
-    tags: ['Next.js', 'React', 'Node.js', 'PostgreSQL'],
+    title: 'Web + app, one system',
+    body: 'A website, an admin panel and mobile apps that share one backend and one source of truth. Most freelancers do one of these; I ship the whole stack so the pieces actually agree.',
+    tags: ['End-to-end', 'Shared APIs', 'One backend'],
   },
   {
     title: 'White-label & multi-tenant delivery',
-    body: 'One product, many branded apps. Per-client theming, configuration and build variants, with a deployment strategy that scales past the first ten tenants.',
+    body: 'One product, many branded clients. Per-client theming, configuration and build variants, with a deployment strategy that scales past the first ten tenants.',
     tags: ['Multi-tenant', 'Theming', 'Build variants'],
   },
   {
-    title: 'QA & store deployment',
-    body: 'End-to-end manual testing, release notes, versioning and the store paperwork — review rejections, provisioning profiles, signing. Handled.',
-    tags: ['QA', 'App Store', 'Play Store', 'Release mgmt'],
-  },
-  {
-    title: 'Feature discovery to delivery',
-    body: 'Regular work with sales and business teams to turn a requirement into a scoped, shipped feature — including the parts nobody wrote down.',
-    tags: ['Scoping', 'Requirements', 'Delivery'],
+    title: 'Deployment & release automation',
+    body: 'CI/CD that builds, signs and publishes for you — web deploys and both app stores. Plus the paperwork: review rejections, provisioning profiles, signing, release notes.',
+    tags: ['CI/CD', 'GitHub Actions', 'Fastlane', 'App Store', 'Play Store'],
   },
 ]
 
 export const skills = [
-  { group: 'Languages', items: ['JavaScript', 'Java', 'Swift', 'PHP', 'SQL / PostgreSQL', 'HTML / CSS'] },
-  { group: 'Frameworks', items: ['React Native', 'React', 'Next.js', 'Node.js', 'Laravel'] },
-  { group: 'Automation & CI/CD', items: ['Fastlane', 'GitHub Actions', 'Codemagic', 'Jenkins', 'YAML'] },
-  { group: 'Platform & tools', items: ['Git', 'Google Cloud Platform', 'Firebase', 'Xcode', 'Android Studio', 'VS Code'] },
-  { group: 'Mobile capabilities', items: ['Native modules', 'Push notifications', 'Deep linking', 'Live Activities', 'AR', 'Geolocation', 'Printer SDKs'] },
+  { group: 'Frontend', items: ['Next.js', 'React', 'JavaScript', 'HTML / CSS', 'Responsive UI'] },
+  { group: 'Backend & data', items: ['Node.js', 'REST APIs', 'PostgreSQL', 'SQL', 'PHP', 'Laravel', 'Firebase'] },
+  { group: 'Mobile', items: ['React Native', 'Swift', 'Java', 'Native modules', 'Push notifications', 'Deep linking', 'Live Activities', 'AR', 'Geolocation'] },
+  { group: 'DevOps & CI/CD', items: ['GitHub Actions', 'Fastlane', 'Codemagic', 'Jenkins', 'YAML', 'Google Cloud Platform'] },
+  { group: 'Tools', items: ['Git', 'VS Code', 'Xcode', 'Android Studio'] },
 ]
 
 export const experience = [
@@ -225,16 +225,10 @@ export const experience = [
   },
 ]
 
-export const education = {
-  degree: 'B.Tech, Electrical Engineering',
-  org: 'AKTU, Lucknow',
-  period: 'Aug 2017 — May 2021',
-}
-
 export const sections = [
   { id: 'work', num: '01', label: 'Work' },
   { id: 'services', num: '02', label: 'Services' },
   { id: 'stack', num: '03', label: 'Stack' },
-  { id: 'experience', num: '04', label: 'Experience' },
+  { id: 'experience', num: '04', label: 'Background' },
   { id: 'contact', num: '05', label: 'Contact' },
 ]

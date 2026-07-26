@@ -1,4 +1,4 @@
-import { education, experience } from '../content'
+import { experience } from '../content'
 import { useReveal } from '../hooks'
 import SectionHead from './SectionHead'
 
@@ -30,24 +30,14 @@ export default function Experience() {
       <div className="wrap">
         <SectionHead
           num="04"
-          title="Experience"
-          blurb="Four years at the same product company — testing it, releasing it, then building it."
+          title="Background"
+          blurb="Four years inside a product company — testing it, releasing it, then building it. That's where the delivery discipline comes from."
         />
 
         <div className="exp-list">
           {experience.map((e) => (
             <Entry key={e.role} item={e} />
           ))}
-
-          <div className="exp exp--edu">
-            <div className="exp__when">
-              <span className="exp__period">{education.period}</span>
-            </div>
-            <div className="exp__what">
-              <h3 className="exp__role">{education.degree}</h3>
-              <p className="exp__org">{education.org}</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
