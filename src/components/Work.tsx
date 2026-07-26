@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { projects, type Project } from '../content'
-import { useReveal } from '../hooks'
 import SectionHead from './SectionHead'
 
 function Row({ project }: { project: Project }) {
   const [open, setOpen] = useState(project.featured === true)
-  const ref = useReveal<HTMLElement>()
   const panelId = `panel-${project.id}`
 
+  // Deliberately not scroll-revealed: rows are clickable, and a row still
+  // faded to opacity 0 would expand into blank space when toggled open.
   return (
-    <article className={`proj reveal ${open ? 'is-open' : ''}`} ref={ref}>
+    <article className={`proj ${open ? 'is-open' : ''}`}>
       <button
         className="proj__head"
         onClick={() => setOpen((o) => !o)}
