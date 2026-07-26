@@ -96,8 +96,25 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'whitelabel',
+    id: 'doctor-saas',
     index: '04',
+    title: 'Doctor Appointment SaaS',
+    kind: 'Multi-tenant booking platform',
+    year: 'Production',
+    summary:
+      'A SaaS platform for clinics and practitioners — appointment booking and practice management, built on a microservices backend rather than a single monolith.',
+    detail: [
+      'Microservices architecture: independently deployable services talking over APIs, so parts of the system can scale — and fail — without taking the rest down.',
+      'Multi-tenant by design — each clinic runs isolated data and its own configuration on shared infrastructure.',
+      'Appointment booking and scheduling for patients, with practice-side management tools behind it.',
+      'Service boundaries, data ownership and API contracts designed up front, not retrofitted.',
+    ],
+    stack: ['Microservices', 'System design', 'REST APIs', 'Multi-tenant'],
+    note: 'Client product — architecture walkthrough on request',
+  },
+  {
+    id: 'whitelabel',
+    index: '05',
     title: 'White-labeled SaaS Mobile App',
     kind: 'Multi-tenant framework',
     year: '2023 — Present',
@@ -116,7 +133,7 @@ export const projects: Project[] = [
   },
   {
     id: 'cicd',
-    index: '05',
+    index: '06',
     title: 'CI/CD Automation Pipeline',
     kind: 'Release engineering',
     year: '2023 — Present',
@@ -131,7 +148,7 @@ export const projects: Project[] = [
   },
   {
     id: 'quiz',
-    index: '06',
+    index: '07',
     title: 'English Quiz App',
     kind: 'Consumer mobile app',
     year: 'Shipped',
@@ -164,9 +181,9 @@ export const services = [
     tags: ['React Native', 'iOS', 'Android', 'Native modules'],
   },
   {
-    title: 'Web + app, one system',
-    body: 'A website, an admin panel and mobile apps that share one backend and one source of truth. Most freelancers do one of these; I ship the whole stack so the pieces actually agree.',
-    tags: ['End-to-end', 'Shared APIs', 'One backend'],
+    title: 'System design & architecture',
+    body: 'Microservices, multi-tenant data models and API contracts designed before the first line of code. A website, an admin panel and mobile apps sharing one backend and one source of truth — most freelancers do one piece; I design the system so the pieces agree.',
+    tags: ['System design', 'Microservices', 'API design', 'Multi-tenant'],
   },
   {
     title: 'White-label & multi-tenant delivery',
@@ -182,7 +199,7 @@ export const services = [
 
 export const skills = [
   { group: 'Frontend', items: ['Next.js', 'React', 'Vue.js', 'JavaScript', 'HTML / CSS', 'Responsive UI'] },
-  { group: 'Backend & data', items: ['Node.js', 'REST APIs', 'PostgreSQL', 'SQL', 'PHP', 'Laravel', 'Firebase'] },
+  { group: 'Backend & data', items: ['Node.js', 'REST APIs', 'Microservices', 'System design', 'PostgreSQL', 'SQL', 'PHP', 'Laravel', 'Firebase'] },
   { group: 'Mobile', items: ['React Native', 'Swift', 'Java', 'Native modules', 'Push notifications', 'Deep linking', 'Live Activities', 'AR', 'Geolocation'] },
   { group: 'DevOps & hosting', items: ['GitHub Actions', 'Fastlane', 'Codemagic', 'Jenkins', 'YAML', 'Cloudflare', 'Google Cloud Platform'] },
   { group: 'Tools', items: ['Git', 'VS Code', 'Xcode', 'Android Studio'] },
