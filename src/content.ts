@@ -181,10 +181,10 @@ export const services = [
 ]
 
 export const skills = [
-  { group: 'Frontend', items: ['Next.js', 'React', 'JavaScript', 'HTML / CSS', 'Responsive UI'] },
+  { group: 'Frontend', items: ['Next.js', 'React', 'Vue.js', 'JavaScript', 'HTML / CSS', 'Responsive UI'] },
   { group: 'Backend & data', items: ['Node.js', 'REST APIs', 'PostgreSQL', 'SQL', 'PHP', 'Laravel', 'Firebase'] },
   { group: 'Mobile', items: ['React Native', 'Swift', 'Java', 'Native modules', 'Push notifications', 'Deep linking', 'Live Activities', 'AR', 'Geolocation'] },
-  { group: 'DevOps & CI/CD', items: ['GitHub Actions', 'Fastlane', 'Codemagic', 'Jenkins', 'YAML', 'Google Cloud Platform'] },
+  { group: 'DevOps & hosting', items: ['GitHub Actions', 'Fastlane', 'Codemagic', 'Jenkins', 'YAML', 'Cloudflare', 'Google Cloud Platform'] },
   { group: 'Tools', items: ['Git', 'VS Code', 'Xcode', 'Android Studio'] },
 ]
 
