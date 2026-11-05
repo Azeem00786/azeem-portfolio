@@ -31,7 +31,7 @@ export default function Experience() {
         <SectionHead
           num="04"
           title="Background"
-          blurb="Four years inside a product company — testing it, releasing it, then building it. That's where the delivery discipline comes from."
+          blurb="From mobile QA and store releases to React Native development, backend services and deployment automation."
         />
 
         <div className="exp-list">

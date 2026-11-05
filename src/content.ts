@@ -5,11 +5,11 @@
 
 export const profile = {
   name: 'Mohammad Azeem',
-  role: 'Full-Stack Developer — Web & Mobile',
+  role: 'React Native Mobile App & Backend Engineer',
   location: 'Lucknow, India',
   timezone: 'IST · UTC+5:30',
   available: true,
-  availabilityNote: 'Open to contract & project work',
+  availabilityNote: 'Open to part-time mobile app & backend roles',
   email: 'azeemmohammad377@gmail.com',
   phone: '+91 85738 67986',
   phoneHref: 'tel:+918573867986',
@@ -27,7 +27,7 @@ export const profile = {
   linkedinHandle: 'mohammad-azeem',
   resume: 'AzeemResume.pdf',
   intro:
-    'I build complete products — Next.js web platforms with the admin panels that run them, and React Native apps for iOS and Android. Four years shipping inside a multi-tenant SaaS company means I hand over work that is documented, deployable and maintainable, not a demo that breaks the week after launch.',
+    'I build and maintain React Native apps for iOS and Android, and the backend services that support them. I own the mobile lifecycle end to end: UI, native integrations, performance, bug fixes, CI/CD and store deployment. I have also built deployment automation on top of App Store Connect and Google Play Developer APIs for multi-tenant apps, and use agentic AI to automate repetitive development work.',
   since: 2021,
 }
 
@@ -48,9 +48,9 @@ export const bookingIsScheduler = Boolean(profile.booking)
 
 export const stats = [
   { value: '5+', label: 'Years shipping' },
-  { value: 'Web + App', label: 'End-to-end delivery' },
+  { value: 'iOS + Android', label: 'React Native delivery' },
   { value: '90%', label: 'Less manual release time' },
-  { value: 'Multi', label: 'Tenant SaaS at scale' },
+  { value: 'API + App', label: 'Mobile and backend ownership' },
 ]
 
 export type Project = {
@@ -69,42 +69,28 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'nahid',
+    id: 'whitelabel',
     index: '01',
-    title: 'Nahid Group',
-    kind: 'Tour & travel platform',
-    year: 'Live',
+    title: 'White-labeled SaaS Mobile App',
+    kind: 'Multi-tenant framework',
+    year: '2023 — Present',
     summary:
-      'A fully dynamic travel booking website with a custom admin panel behind it. Every package, itinerary, price and page block is editable by the client — no developer in the loop.',
+      'A reusable mobile app framework powering many client apps from one codebase: dynamic branding, theming and per-tenant configuration through environment-based build variants.',
     detail: [
-      'Content-driven front end: tour packages, destinations, galleries and enquiry flows all render from the database.',
-      'Admin panel for the operations team — create and price packages, manage bookings, publish content and handle incoming enquiries.',
-      'Built for a non-technical team to run daily without touching code.',
+      'Augmented Reality experiences integrated into the product flow.',
+      'Printer support across multiple hardware types via React Native libraries and custom native modules.',
+      'Live location tracking with native modules and geolocation APIs.',
+      'iOS Live Activities — order tracking on the Lock Screen and Dynamic Island.',
+      'Rich push and local notifications with custom channels, plus deep linking into specific screens.',
+      'In-app updates, responsive UI and UX, bug fixing and memory and runtime performance optimisation across iOS and Android.',
+      'Facebook SDK event tracking for ad attribution, and WebView-embedded CMS content.',
     ],
-    stack: ['Next.js', 'React', 'Node.js', 'REST APIs', 'Admin panel'],
-    link: { href: 'https://www.nahidgroup.in/', label: 'nahidgroup.in' },
-    featured: true,
-  },
-  {
-    id: 'poweroflearning',
-    index: '02',
-    title: 'Power of AI Learning',
-    kind: 'Learning platform',
-    year: 'Live',
-    summary:
-      'An AI learning hub where courses, modules and learner content are managed end-to-end from an admin backend.',
-    detail: [
-      'Course and module management with structured content publishing.',
-      'Admin panel controlling curriculum, media and learner-facing pages.',
-      'Public site tuned for enrolment — fast pages, clear funnels, mobile-first.',
-    ],
-    stack: ['Next.js', 'React', 'Node.js', 'REST APIs', 'Admin CMS'],
-    link: { href: 'https://www.powerofailearning.in/', label: 'powerofailearning.in' },
-    featured: true,
+    stack: ['React Native', 'Java', 'Swift', 'Native modules', 'ARKit / ARCore', 'REST APIs'],
+    note: 'Hyperzod Technology — flagship product',
   },
   {
     id: 'quick-commerce',
-    index: '03',
+    index: '02',
     title: 'Quick Commerce Suite',
     kind: 'Three apps · iOS & Android',
     year: 'Production',
@@ -121,27 +107,10 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'microservices',
-    index: '04',
-    title: 'Laravel Microservices',
-    kind: 'Backend platform services',
-    year: 'Production',
-    summary:
-      'A set of independent Laravel services the wider product runs on — deployment, logging, printing and notifications — each owning its job and deployable on its own.',
-    detail: [
-      'Deployment service: the whole app deployment process automated down to one click, replacing a manual multi-step release.',
-      'Logging service: centralised log ingestion and search built on Redis, a message queue and MongoDB — writes stay fast under load, history stays queryable.',
-      'Printer service: cloud and thermal printer management across hardware types, with dynamic receipt generation.',
-      'Notification service: a single dispatch point for notifications across the platform.',
-    ],
-    stack: ['Laravel', 'PHP', 'Redis', 'MongoDB', 'Message queues', 'Microservices'],
-    note: 'Internal platform services',
-  },
-  {
     id: 'doctor-app',
-    index: '05',
+    index: '03',
     title: 'Doctor Appointment App',
-    kind: 'Booking & scheduling',
+    kind: 'Mobile booking & scheduling',
     year: 'Production',
     summary:
       'An appointment booking app connecting patients with doctors — scheduling, availability and appointment management, served by a microservices backend.',
@@ -154,45 +123,11 @@ export const projects: Project[] = [
     note: 'Client product — architecture walkthrough on request',
   },
   {
-    id: 'whitelabel',
-    index: '06',
-    title: 'White-labeled SaaS Mobile App',
-    kind: 'Multi-tenant framework',
-    year: '2023 — Present',
-    summary:
-      'A reusable mobile app framework powering many client apps from one codebase: dynamic branding, theming and per-tenant configuration through environment-based build variants.',
-    detail: [
-      'Augmented Reality experiences integrated into the product flow.',
-      'Printer support across multiple hardware types via React Native libraries and custom native modules.',
-      'Live location tracking with native modules and geolocation APIs.',
-      'iOS Live Activities — order tracking on the Lock Screen and Dynamic Island.',
-      'Rich push and local notifications with custom channels, plus deep linking into specific screens.',
-      'Facebook SDK event tracking for ad attribution, and WebView-embedded CMS content.',
-    ],
-    stack: ['React Native', 'Java', 'Swift', 'Native modules', 'ARKit / ARCore', 'REST APIs'],
-    note: 'Hyperzod Technology — flagship product',
-  },
-  {
-    id: 'cicd',
-    index: '07',
-    title: 'CI/CD Automation Pipeline',
-    kind: 'Release engineering',
-    year: '2023 — Present',
-    summary:
-      'Build, signing and release workflows automated end-to-end for white-labeled mobile apps — cutting manual deployment time by 90%.',
-    detail: [
-      'Fastlane integrated with GitHub Actions and Codemagic for repeatable releases.',
-      'Automated code signing, versioning and store submission for Play Store and App Store.',
-      'Consistent staging and production environments, with release notes and build provenance tracked.',
-    ],
-    stack: ['Fastlane', 'GitHub Actions', 'Codemagic', 'YAML', 'Firebase', 'Jenkins'],
-  },
-  {
     id: 'quiz',
-    index: '08',
-    title: 'English Quiz App',
+    index: '04',
+    title: 'Engilo: Spoken English & Exams',
     kind: 'Consumer mobile app',
-    year: 'Shipped',
+    year: 'Live',
     summary:
       'A quiz app for English learners with a modern UI, Google sign-in and ad monetisation built in.',
     detail: [
@@ -202,62 +137,135 @@ export const projects: Project[] = [
       'Quiz content and user progress served over secure REST APIs.',
     ],
     stack: ['React Native', 'Firebase', 'Google Auth', 'AdMob', 'REST APIs'],
+    link: {
+      href: 'https://play.google.com/store/apps/details?id=com.customer.englishapp',
+      label: 'View on Google Play',
+    },
+  },
+  {
+    id: 'cicd',
+    index: '05',
+    title: 'CI/CD Automation Pipeline',
+    kind: 'Release engineering',
+    year: '2023 — Present',
+    summary:
+      'Build, signing and release workflows automated end-to-end for white-labeled mobile apps — cutting manual deployment time by 90%.',
+    detail: [
+      'Fastlane, Jenkins, GitHub Actions and Codemagic used for repeatable mobile builds and releases.',
+      'Automated code signing, versioning and store submission, backed by a deployment service using App Store Connect and Google Play Developer APIs.',
+      'Consistent staging and production environments, with release notes and build provenance tracked.',
+    ],
+    stack: ['Fastlane', 'Jenkins', 'Codemagic', 'GitHub Actions', 'App Store Connect API', 'Google Play Developer API'],
+  },
+  {
+    id: 'microservices',
+    index: '06',
+    title: 'Laravel Microservices',
+    kind: 'Backend platform services',
+    year: 'Production',
+    summary:
+      'A set of independent Laravel services the wider product runs on — deployment, logging, printing and notifications — each owning its job and deployable on its own.',
+    detail: [
+      'Deployment service: automated app releases through App Store Connect and Google Play Developer APIs, replacing a manual multi-step process.',
+      'Logging service: centralised log ingestion and search built on Redis, a message queue and MongoDB — writes stay fast under load, history stays queryable.',
+      'Printer service: cloud and thermal printer management across hardware types, with dynamic receipt generation.',
+      'Notification service: a single dispatch point for notifications across the platform.',
+    ],
+    stack: ['Laravel', 'PHP', 'Redis', 'MongoDB', 'Message queues', 'Microservices'],
+    note: 'Internal platform services',
+  },
+  {
+    id: 'nahid',
+    index: '07',
+    title: 'Nahid Group',
+    kind: 'Tour & travel platform',
+    year: 'Live',
+    summary:
+      'A fully dynamic travel booking website with a custom admin panel behind it. Every package, itinerary, price and page block is editable by the client — no developer in the loop.',
+    detail: [
+      'Content-driven front end: tour packages, destinations, galleries and enquiry flows all render from the database.',
+      'Admin panel for the operations team — create and price packages, manage bookings, publish content and handle incoming enquiries.',
+      'Built for a non-technical team to run daily without touching code.',
+    ],
+    stack: ['Next.js', 'React', 'Node.js', 'REST APIs', 'Admin panel'],
+    link: { href: 'https://www.nahidgroup.in/', label: 'nahidgroup.in' },
+    featured: true,
+  },
+  {
+    id: 'poweroflearning',
+    index: '08',
+    title: 'Power of AI Learning',
+    kind: 'Learning platform',
+    year: 'Live',
+    summary:
+      'An AI learning hub where courses, modules and learner content are managed end-to-end from an admin backend.',
+    detail: [
+      'Course and module management with structured content publishing.',
+      'Admin panel controlling curriculum, media and learner-facing pages.',
+      'Public site tuned for enrolment — fast pages, clear funnels, mobile-first.',
+    ],
+    stack: ['Next.js', 'React', 'Node.js', 'REST APIs', 'Admin CMS'],
+    link: { href: 'https://www.powerofailearning.in/', label: 'powerofailearning.in' },
+    featured: true,
   },
 ]
 
 export const services = [
   {
-    title: 'Full-stack web development',
-    body: 'Next.js and React front ends on a Node backend — marketing sites, booking platforms, learning portals and dashboards. Designed, built, deployed and handed over working.',
-    tags: ['Next.js', 'React', 'Node.js', 'REST APIs'],
-  },
-  {
-    title: 'Admin panels & CMS',
-    body: 'The control room behind the website: your team edits content, prices, catalogues, bookings and enquiries themselves. No developer on retainer for a text change.',
-    tags: ['Admin panel', 'CMS', 'Dashboards', 'PostgreSQL'],
-  },
-  {
-    title: 'Cross-platform mobile apps',
-    body: 'React Native apps for iOS and Android from one codebase — built to be maintained, not just launched. Native modules in Java and Swift when the platform demands it.',
+    title: 'React Native app development',
+    body: 'I build and improve production React Native apps for iOS and Android, from smooth user flows and polished interfaces to reliable native integrations. I can take ownership of new features or an existing app and keep it moving toward a stable release.',
     tags: ['React Native', 'iOS', 'Android', 'Native modules'],
   },
   {
-    title: 'System design & microservices',
-    body: 'Backend services split by responsibility — deployment, logging, notifications, printing — built in Laravel and Node with Redis, queues and MongoDB behind them. A website, an admin panel and mobile apps sharing one backend and one source of truth.',
-    tags: ['System design', 'Microservices', 'Laravel', 'Redis', 'Queues'],
+    title: 'Mobile CI/CD & store releases',
+    body: 'Build, sign, test and publish apps with Fastlane, Jenkins and Codemagic. I built a deployment service using App Store Connect and Google Play Developer APIs to automate releases across branded apps.',
+    tags: ['Fastlane', 'Jenkins', 'Codemagic', 'Store APIs'],
+  },
+  {
+    title: 'Backend services & APIs',
+    body: 'Maintain the services behind mobile products: deployment, logging, notifications and printing, with Laravel, Node.js, Redis, queues and MongoDB.',
+    tags: ['Laravel', 'Node.js', 'REST APIs', 'Redis'],
   },
   {
     title: 'White-label & multi-tenant delivery',
-    body: 'One product, many branded clients. Per-client theming, configuration and build variants, with a deployment strategy that scales past the first ten tenants.',
+    body: 'One mobile product, many branded clients. Per-client theming, configuration, build variants and release automation across iOS and Android.',
     tags: ['Multi-tenant', 'Theming', 'Build variants'],
   },
   {
-    title: 'Deployment & release automation',
-    body: 'CI/CD that builds, signs and publishes for you — web deploys and both app stores. Plus the paperwork: review rejections, provisioning profiles, signing, release notes.',
-    tags: ['CI/CD', 'GitHub Actions', 'Fastlane', 'App Store', 'Play Store'],
+    title: 'Full-stack web development',
+    body: 'Next.js and React platforms with Node.js backends, admin panels and CMS tools for content, bookings and operations.',
+    tags: ['Next.js', 'React', 'Node.js', 'Admin panels'],
+  },
+  {
+    title: 'App performance & quality',
+    body: 'Trace and fix production bugs, optimise memory and runtime behaviour, and refine mobile UI and UX across devices and OS versions.',
+    tags: ['Performance', 'Memory', 'Bug fixing', 'UI / UX'],
   },
 ]
 
 export const skills = [
-  { group: 'Frontend', items: ['Next.js', 'React', 'Vue.js', 'JavaScript', 'HTML / CSS', 'Responsive UI'] },
+  { group: 'Mobile', items: ['React Native', 'iOS', 'Android', 'Swift', 'Java', 'Native modules', 'Push and local notifications', 'Deep linking', 'In-app updates', 'Live Activities', 'AR', 'Geolocation', 'Memory optimisation', 'Mobile UI / UX'] },
+  { group: 'Mobile CI/CD', items: ['Fastlane', 'Jenkins', 'Codemagic', 'GitHub Actions', 'App Store Connect API', 'Google Play Developer API', 'Code signing', 'Store deployment'] },
   { group: 'Backend & data', items: ['Node.js', 'Laravel', 'PHP', 'REST APIs', 'Microservices', 'System design', 'PostgreSQL', 'MongoDB', 'Redis', 'Message queues', 'SQL', 'Firebase'] },
-  { group: 'Mobile', items: ['React Native', 'Swift', 'Java', 'Native modules', 'Push notifications', 'Deep linking', 'Live Activities', 'AR', 'Geolocation'] },
-  { group: 'DevOps & hosting', items: ['GitHub Actions', 'Fastlane', 'Codemagic', 'Jenkins', 'YAML', 'Cloudflare', 'Google Cloud Platform'] },
+  { group: 'Frontend', items: ['Next.js', 'React', 'Vue.js', 'JavaScript', 'HTML / CSS', 'Responsive UI'] },
+  { group: 'DevOps & hosting', items: ['YAML', 'Cloudflare', 'Google Cloud Platform'] },
   { group: 'Tools', items: ['Git', 'VS Code', 'Xcode', 'Android Studio'] },
 ]
 
 export const experience = [
   {
-    role: 'React Native Developer & Mobility DevOps',
+    role: 'React Native Mobile App & Backend Engineer',
     org: 'Hyperzod Technology Pvt. Ltd.',
     period: '2023 — Present',
     place: 'Lucknow, India',
     points: [
-      'Develop and maintain cross-platform mobile applications in React Native.',
-      'Built and manage CI/CD pipelines automating build and deployment.',
+      'Develop and maintain React Native apps for iOS and Android, from UI and native integrations through bug fixes and performance optimisation.',
+      'Build and manage CI/CD pipelines with Fastlane, Jenkins and Codemagic for automated builds, signing and store releases.',
+      'Built a deployment service on App Store Connect and Google Play Developer APIs to automate app publishing.',
       'Scaled the deployment strategy for a multi-tenant SaaS architecture supporting white-labeled apps.',
-      'Work directly with sales and business teams to gather requirements and lead features from scratch.',
-      'Focus on app performance, scalability and maintainability.',
+      'Maintain backend services and APIs for deployment, notifications, logging and printing.',
+      'Deliver notifications, location tracking, deep links and in-app updates while improving UI, UX and memory use.',
+      'Use agentic AI workflows to automate repetitive development tasks and speed up feature delivery.',
     ],
   },
   {

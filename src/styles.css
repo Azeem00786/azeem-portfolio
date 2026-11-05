@@ -387,6 +387,10 @@ ol {
 }
 
 @media (max-width: 860px) {
+  .nav__actions .icon-btn {
+    width: 44px;
+    height: 44px;
+  }
   .nav__mark-name {
     display: none;
   }
@@ -555,6 +559,18 @@ ol {
 }
 
 @media (max-width: 720px) {
+  .hero__status {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    max-width: 100%;
+    border-radius: var(--radius);
+  }
+  .hero__status-sep {
+    display: none;
+  }
+  .hero__status > span:last-child {
+    grid-column: 2;
+  }
   .hero__stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -786,6 +802,10 @@ ol {
   .proj__year {
     grid-column: 2;
   }
+  .proj__toggle {
+    grid-column: 3;
+    grid-row: 1;
+  }
   .proj__panel-inner {
     grid-template-columns: 1fr;
     padding-bottom: 28px;
@@ -801,7 +821,7 @@ ol {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);

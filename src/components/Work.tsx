@@ -70,7 +70,7 @@ export default function Work() {
         <SectionHead
           num="01"
           title="Selected work"
-          blurb="Products in production — live web platforms, store-published apps, and the admin panels and pipelines behind them."
+          blurb="React Native apps first, followed by the release pipelines, backend services and web platforms that support them."
         />
         <div className="proj-list">
           {projects.map((p) => (

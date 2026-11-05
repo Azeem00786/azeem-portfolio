@@ -28,7 +28,7 @@ export default function Services() {
         <SectionHead
           num="02"
           title="What I take on"
-          blurb="Engagements I can own end-to-end, from first scoping call to store release."
+          blurb="Part-time support across the mobile lifecycle, from feature work and backend APIs to production releases."
         />
         <div className="card-grid">
           {services.map((s, i) => (

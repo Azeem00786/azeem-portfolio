@@ -24,7 +24,7 @@ export default function Stack() {
         <SectionHead
           num="03"
           title="Stack"
-          blurb="Front end through deployment — the full path, not one slice of it."
+          blurb="React Native, mobile release automation and the backend systems behind the apps."
         />
         <div className="stack">
           {skills.map((s) => (

@@ -16,7 +16,7 @@ export default function Contact() {
         <SectionHead
           num="05"
           title="Let's build something"
-          blurb="Agencies, founders and product teams — tell me what you're shipping and I'll tell you how I'd help."
+          blurb="Looking for part-time React Native and backend support? Tell me about your app and where you need help."
         />
 
         <div className="contact__body reveal" ref={ref}>
